@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maple security</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/jquery.js"></script>
+    <script>
+    $(window).load(function() {
+        $(".se-pre-con").fadeOut("slow");
+    });
+    $(document).on('click', '.navbar-collapse.in', function(e) {
+        if ($(e.target).is('a')) {
+            $(this).collapse('hide');
+        }
+    });
+    </script>
+</head>
+
+<body data-spy="scroll" data-target="#main-navbar">
+    <div class="se-pre-con"><img src="gears.gif" class="settings"></div>
+    <div class="main-container" id="page">
+        <header id="nav1-1">
+            <nav class="navbar" id="main-navbar">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="index.html" class="navbar-brand smooth-scroll maple-icon"><img src="mapleicons.jpg" alt="logo" class="mapleicon"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="products.html" class="smooth-scroll text-nav" src="images/logo-black.png">Products</a></li>
+                            <li><a href="contact.html" class="smooth-scroll text-nav" src="images/logo-black.png">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section id="contact1-3" class="p-y-lg contact bg-img image-back">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="section-header text-center text-white wow fadeIn visibility">
+                            <h2>Ready to Get Started?</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+                        <form class="form-horizontal form-white" id="contactForm">
+                            <p class="success cf text-center"><i class="fa fa-check"></i> <strong>Your message has successfully been sent.</strong></p>
+                            <p class="failed cf text-center"><i class="fa fa-exclamation-circle"></i><strong> Something went wrong!</strong></p>
+                            <div class="form-group w-50">
+                                <input type="text" class="form-control" id="cfName" placeholder="Name" required="">
+                                <input type="email" class="form-control" id="cfEmail" placeholder="Email" required="">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="cfSubject" placeholder="Subject" required="">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="cfMessage" rows="5" class="form-control" placeholder="Your Message" required=""></textarea>
+                            </div>
+                            <div class="form-group m-b-0">
+                                <button type="submit" class="btn btn-shadow btn-green">CONTACT US!</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script id="twitter-wjs" src="js/widjets.js"></script>
+    <script src="js/plugins/bootstrap.min.js"></script>
+    <iframe class="frame" id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
+</body>
+
+</html>
